@@ -431,6 +431,20 @@ under the License.
     </dependency>
   </dependencies>
   <!--bootstrap-end-comment-->
+    
+    <distributionManagement>
+		 <snapshotRepository>
+		    <id>nexus</id>
+			 <name>Snapshot</name>
+		    <url>http://172.31.19.254:8081/repository/maven-snapshots/</url>
+		 </snapshotRepository>
+		
+		<repository>
+		    <id>nexus</id>
+		    <name>releases</name>
+		    <url>http://172.31.19.254:8081/repository/maven-releases/</url>
+		</repository>
+  	</distributionManagement>
 
   <build>
     <pluginManagement>
